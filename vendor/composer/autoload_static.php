@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit582a6e4e044ddaa7decc4a445d904396
+class ComposerStaticInit580b254b75781980bf3d9250134ed970
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -340,8 +340,8 @@ class ComposerStaticInit582a6e4e044ddaa7decc4a445d904396
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -3372,6 +3372,7 @@ class ComposerStaticInit582a6e4e044ddaa7decc4a445d904396
         'NunoMaduro\\Collision\\Exceptions\\InvalidStyleException' => __DIR__ . '/..' . '/nunomaduro/collision/src/Exceptions/InvalidStyleException.php',
         'NunoMaduro\\Collision\\Exceptions\\ShouldNotHappen' => __DIR__ . '/..' . '/nunomaduro/collision/src/Exceptions/ShouldNotHappen.php',
         'NunoMaduro\\Collision\\Exceptions\\TestException' => __DIR__ . '/..' . '/nunomaduro/collision/src/Exceptions/TestException.php',
+        'NunoMaduro\\Collision\\Exceptions\\TestOutcome' => __DIR__ . '/..' . '/nunomaduro/collision/src/Exceptions/TestOutcome.php',
         'NunoMaduro\\Collision\\Handler' => __DIR__ . '/..' . '/nunomaduro/collision/src/Handler.php',
         'NunoMaduro\\Collision\\Highlighter' => __DIR__ . '/..' . '/nunomaduro/collision/src/Highlighter.php',
         'NunoMaduro\\Collision\\Provider' => __DIR__ . '/..' . '/nunomaduro/collision/src/Provider.php',
@@ -6220,6 +6221,9 @@ class ComposerStaticInit582a6e4e044ddaa7decc4a445d904396
         'Whoops\\Handler\\PlainTextHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/PlainTextHandler.php',
         'Whoops\\Handler\\PrettyPageHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php',
         'Whoops\\Handler\\XmlResponseHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/XmlResponseHandler.php',
+        'Whoops\\Inspector\\InspectorFactory' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Inspector/InspectorFactory.php',
+        'Whoops\\Inspector\\InspectorFactoryInterface' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Inspector/InspectorFactoryInterface.php',
+        'Whoops\\Inspector\\InspectorInterface' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Inspector/InspectorInterface.php',
         'Whoops\\Run' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Run.php',
         'Whoops\\RunInterface' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/RunInterface.php',
         'Whoops\\Util\\HtmlDumperOutput' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/HtmlDumperOutput.php',
@@ -6232,10 +6236,10 @@ class ComposerStaticInit582a6e4e044ddaa7decc4a445d904396
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit582a6e4e044ddaa7decc4a445d904396::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit582a6e4e044ddaa7decc4a445d904396::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit582a6e4e044ddaa7decc4a445d904396::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit582a6e4e044ddaa7decc4a445d904396::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit580b254b75781980bf3d9250134ed970::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit580b254b75781980bf3d9250134ed970::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit580b254b75781980bf3d9250134ed970::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit580b254b75781980bf3d9250134ed970::$classMap;
 
         }, null, ClassLoader::class);
     }
