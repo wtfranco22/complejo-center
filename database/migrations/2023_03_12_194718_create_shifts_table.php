@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('shifts', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('establishment_id')->constrained()->cascadeOnUpdate()->restrictOnDelete();
+            $table->foreignId('user_id')->constrained()->cascadeOnUpdate()->restrictOnDelete();
+            $table->foreignId('court_id')->constrained()->cascadeOnUpdate()->restrictOnDelete();
+            $table->boolean('active');
+            $table->dateTime('date');
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_unicode_ci';
             $table->timestamps();
         });
     }

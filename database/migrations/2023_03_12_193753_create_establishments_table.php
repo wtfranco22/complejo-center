@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('establishments', function (Blueprint $table) {
             $table->id();
+            $table->string('name',50)->nullable(false);
+            $table->string('location',150)->nullable(false);
+            $table->unsignedInteger('phone');
+            $table->string('image_url');
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8mb4';
+            $table->collation = 'utf8mb4_unicode_ci';
             $table->timestamps();
         });
     }
